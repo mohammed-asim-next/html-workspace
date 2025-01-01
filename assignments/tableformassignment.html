@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      sup {
+        color: red;
+      }
+      font {
+        color: red;
+      }
+    </style>
+</head>
+<body>
+<form action="./save.html" method="get">
+<table border="1px solid" cellspacing="0px" >
+    <thead>
+        <tr>
+            <th colspan="4">
+                1.Key Employment Details
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <label for="surname">
+                    1.1<sup>*</sup>Surname:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="surname" id="surname" required>
+            </td>
+            <td>
+                <label for="name">
+                    1.2<sup>*</sup>Name:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="name" id="name" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gender">
+                    1.3<sup>*</sup>Gender:
+                </label>
+            </td>
+            <td>
+             <label for="male">
+                <input type="radio" name="gender" id="male" required>male
+             </label>
+             <label for="female">
+                <input type="radio" name="gender" id="female" required> female
+             </label>
+            </td>
+            <td>
+                <label for="fname">
+                    1.4 Father/Husband Name:
+                </label>
+            </td>
+            <td>
+                <label for="father">
+                    <input type="radio" name="f/hname" id="father">father
+                </label>
+                <label for="husband">
+                    <input type="radio" name="f/hname" id="husband">husband
+                </label>
+                <br>
+                <input type="text" name="fname" id="fname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="dob">
+                    1.5<sup>*</sup>Date Of Birth:
+                </label>
+            </td>
+            <td>
+                <input type="date" name="dob" id="dob" required> <font>(dd-mm-yy)</font>
+            </td>
+            <td>
+                <label for="des">
+                    1.6<sup>*</sup>Designation/Post
+                </label>
+            </td>
+            <td>
+                <input type="text" name="des" id="des" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="mstatus">
+                    1.7<sup>*</sup>Marital Status:
+                </label>
+            </td>
+            <td>
+                <select name="mstatus" id="mstatus" required>
+                    <option value="">--select--</option>
+                    <option value="unmarried">Unmarried</option>
+                    <option value="married">Married</option>
+                </select>
+            </td>
+            <td>
+                <label for="ew">
+                    1.8<sup>*</sup>Office in Which Employee is Working
+                </label>
+            </td>
+            <td>
+                    <select name="ew" id="ew" required>
+                        <option value="">--select--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="aadhaar">
+                    1.9 Aadhaar Number:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="aadhaar" id="aadhaar">
+            </td>
+            <td>
+                <label for="epfnumber">
+                    1.10 EPF Number:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="epfnumber" id="epfnumber">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="rpm">
+                    1.11<sup>*</sup>Remunaration Per Month:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="rpm" id="rpm" required>
+            </td>
+            <td>
+                <label for="Commission">
+                    1.12<sup>*</sup>Commission Payable to the Agency for the Post:
+                </label>
+            </td>
+            <td>
+                <label for="amount">
+                    <input type="radio" name="comm" id="amount" required>Amount
+                </label>
+                <label for="per">
+                    <input type="radio" name="comm" id="per" required>Percentage(%)
+                </label><br>
+                <input type="text" name="Commission" id="Commission" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="hoa">
+                    1.13<sup>*</sup>Head of Account:
+                </label>
+            </td>
+            <td>
+                <select name="hoa" id="hoa" required>
+                    <option value="">--select--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </td>
+            <td>
+                <label for="Pphono">
+                    1.14 Personal Mobile No:
+                </label>
+            </td>
+            <td>
+                <input type="tel" name="Pphono" id="Pphono">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pemail">
+                    1.15 Personal E-mail:
+                </label>
+            </td>
+            <td>
+                <input type="email" name="pemail" id="pemail">
+            </td>
+            <td>
+                <label for="community">
+                    1.16<sup>*</sup>Community
+                </label>
+            </td>
+            <td>
+                <select name="community" id="community" required>
+                    <option value="">--select--</option>
+                    <option value="">OBC</option>
+                    <option value="">OC</option>
+                    <option value="">General</option>
+                    <option value="">SC</option>
+                    <option value="st">ST</option>
+                </select>
+            </td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th colspan="4">
+                2.Agency Details
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <label for="csd">
+                    2.1<sup>*</sup>Contarct Start Date:
+                </label>
+            </td>
+            <td>
+                <input type="date" name="csd" id="csd" required><font>(dd-mm-yy)</font>
+            </td>
+            <td>
+                <label for="ced">
+                    2.2<sup>*</sup>Contarct End Date:
+                </label>
+            </td>
+            <td>
+                <input type="date" name="ced" id="ced" required><font>(dd-mm-yy)</font>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="crn">
+                    2.3 Contract Ref Number:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="crn" id="crn">
+            </td>
+            <td>
+                <label for="son">
+                    2.4 Sanction Order Number:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="son" id="son">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="aname">
+                    2.5 Agency Name:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="aname" id="aname">
+            </td>
+            <td>
+                <label for="pan">
+                    2.6 PAN
+                </label>
+            </td>
+            <td>
+                <input type="text" name="pan" id="pan">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="rnld">
+                    2.7 Registration Number Regster with Labour Department:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="rnld" id="rnld">
+            </td>
+            <td>
+                <label for="stn">
+                    2.8 Service Tax Number:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="stn" id="stn">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="landmark">
+                    2.9 LandMark:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="landmark" id="landmark">
+            </td>
+            <td>
+                <label for="street">
+                    2.10 Street/Road/Lane:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="street" id="street">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="area">
+                    2.11 Area/Locality/Sector:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="area" id="area">
+            </td>
+            <td>
+                <label for="district">
+                    2.12<sup>*</sup>District:
+                </label>
+            </td>
+            <td>
+                <select name="district" id="district" required>
+                    <option value="">--select--</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="karimnagar">Karimnagar</option>
+                    <option value="medak">Medak</option>
+                    <option value="ranga-reddy">Ranga Reddy</option>
+                    <option value="warangal">Warangal</option>
+                    <option value="khammam">Khammam</option>
+                    <option value="adilabad">Adilabad</option>
+                    <option value="mahabubnagar">Mahabubnagar</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="mandal">
+                    2.13<sup>*</sup>Mandal:
+                </label>
+            </td>
+            <td>
+                <select name="mandal" id="mandal" required>
+                    <option value="">--select--</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="karimnagar">Karimnagar</option>
+                    <option value="medak">Medak</option>
+                    <option value="ranga-reddy">Ranga Reddy</option>
+                    <option value="warangal">Warangal</option>
+                    <option value="khammam">Khammam</option>
+                    <option value="adilabad">Adilabad</option>
+                    <option value="mahabubnagar">Mahabubnagar</option>
+                </select>
+            </td>
+            <td>
+                <label for="vtc">
+                    2.14<sup>*</sup>Village/Town/city:
+                </label>
+            </td>
+            <td>
+                <select name="vtc" id="vtc" required>
+                    <option value="">--select--</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="karimnagar">Karimnagar</option>
+                    <option value="medak">Medak</option>
+                    <option value="ranga-reddy">Ranga Reddy</option>
+                    <option value="warangal">Warangal</option>
+                    <option value="khammam">Khammam</option>
+                    <option value="adilabad">Adilabad</option>
+                    <option value="mahabubnagar">Mahabubnagar</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pin">
+                    2.15 PIN Code:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="pin" id="pin">
+            </td>
+            <td>
+                <label for="tel">
+                    2.16 Telephone:
+                </label>
+            </td>
+            <td>
+                <input type="tel" name="tel" id="tel">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="mob">
+                    2.17<sup>*</sup>Mobile
+                </label>
+            </td>
+            <td>
+                <input type="tel" name="mob" id="mob" required>
+            </td>
+            <td>
+                <label for="a-email">
+                    2.18<sup>*</sup>E-mail:
+                </label>
+            </td>
+            <td>
+                <input type="email" name="email" id="a-email" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="bankname">
+                    2.19 Bank Name:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="bankname" id="bankname" placeholder="Select Bank Name" list="banknamelist">
+                <datalist id="banknamelist">
+            <option value="state-bank-of-india">State Bank Of India</option>
+            <option value="union-bank-of-india">Union Bank Of India</option>
+            <option value="syndicate-bank">Syndicate Bank</option>
+            <option value="paytm-payments-bank-ltd">Paytm Payments Bank Ltd</option>
+            <option value="indian-bank">Indian Bank</option>
+            <option value="idfc-bank-limited">Idfc Bank Limited</option>
+            <option value="icici-bank-limited">Icici Bank Limited</option>
+            <option value="canara-bank">Canara Bank</option>        
+                </datalist>
+            </td>
+            <td>
+                <label for="dbb">
+                    2.20 District of the Bank Branch:
+                </label>
+            </td>
+            <td>
+            <select name="dbb" id="dbb">
+                <option value="">--select--</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="karimnagar">Karimnagar</option>
+                <option value="medak">Medak</option>
+                <option value="ranga-reddy">Ranga Reddy</option>
+                <option value="warangal">Warangal</option>
+                <option value="khammam">Khammam</option>
+                <option value="adilabad">Adilabad</option>
+                <option value="mahabubnagar">Mahabubnagar</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="bbn">
+                    2.21 Bank Branch Name:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="bbn" id="bbn" placeholder="Select Bank Branch Name" list="bbnl">
+                <datalist id="bbnl">
+                    <option value="AIR FORCE STATION  HAKIMPET">AIR FORCE STATION  HAKIMPET</option>
+                    <option value="ANANDBAGH">ANANDBAGH</option>
+                    <option value="ANNARAM">ANNARAM</option>
+                    <option value="ARYANAGAR  NIZAMABAD">ARYANAGAR  NIZAMABAD</option>
+                    <option value="AS RAO NAGAR SECUNDERABADD">AS RAO NAGAR SECUNDERABADD</option>
+                    <option value="BALANAGAR">BALANAGAR</option>
+                    <option value="DILSUKH NAGAR">DILSUKH NAGAR</option>
+                </datalist>
+            </td>
+            <td>
+                <label for="acconumber">
+                    2.22 Bank A/C Number:
+                </label>
+            </td>
+            <td>
+                <input type="text" name="acconumber" id="acconumber">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="ifsc">
+                    2.23 IFS code:
+                </label>
+            </td>
+            <td colspan="3">
+                <input type="text" name="ifsc" id="ifsc">
+            </td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <th colspan="4">
+                <input type="submit" value="Save Data">
+            </th>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+    </tbody>
+    </form>
+</table>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="age">age
+            <input type="number" name="" id="age" max="56" min="21">
+            <small style="color: red;">age must be 21+</small>
+        </label>
+        <br><br>
+        <label for="password1">Password 
+            <input type="password" name="" id="password1" pattern="[0-9]{2}[a-z]{5}"> <small style="color: red;"> eg: 12abcde</small>
+        </label>
+        <br><br>
+        <label for="">
+            password:
+            <input type="password" name="" id="" pattern="[A-Z][0-9]{4}">
+            <small style="color: red;">eg: MOHD2002(first 4 letters of your name and Year of Birth)</small>
+        </label>
+        <br><br>
+        <label for="">Password2
+            <input type="password" min-length="5" max-length="9" name="" id="">
+            <small style="color: red;">password minimum length is 5 and maximum length is 9</small>
+        </label>
+        <br><br>
+        <label for="">
+            Name : <input type="text" name="" id="" required placeholder="Enter Your Name" autocomplete="on" autofocus>
+        </label>
+        <br><br>
+        <label for=""> readonly
+            <input type="text" name="" id="" readonly value="you can read only can't change"> 
+        </label>
+        <br><br>
+        <label for="">disabled :
+            <input type="text" name="" id="" disabled value="you can't access">
+        </label>
+        <br><br>
+        <label for="">
+            hidden <input type="text" name="" id="" hidden>
+        </label>
+        <br><br>
+        <label for="">checked
+            <input type="checkbox" name="" id="" checked>
+        </label>
+        <br><br>
+        <input type="submit" name="" id="">
+        <br>
+        <input type="text" name="" id="" list="con">
+        <datalist id="con">
+            <option value="usa">usa</option>
+            <option value="use">uae</option>
+        </datalist>
+    </form>
+</body>
+</html>

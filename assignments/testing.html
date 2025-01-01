@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px black solid;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+        }
+        input{
+            margin: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="display" align="center" >
+        <input type="text" name="" id="input">
+        <br>
+        <button onclick="extact()">submit</button>
+    </div>
+        <p>paragraph tag</p>
+        <br>
+        br tag <s>ass</s>
+    <script>
+
+        let display = document.getElementById('display');
+        let input = 2;
+        let a = [1,2,3,4,5];
+       
+        function extact(){
+            
+            var n = parseInt(document.getElementById('input').value);
+            if(n > null){
+            let rem,rev= 0;
+            	    while(Math.floor(n)>0){
+                        rem = n%10;
+                        rev = Math.floor(rev*10+rem);
+    
+                        display.innerHTML += `<p>${Math.floor(rem)}</p>`;
+                        n/=10;
+                    }
+                    
+                    display.innerHTML += `<p>${rev}</p>`;
+               
+        }
+    }
+    </script>
+</body>
+</html>
